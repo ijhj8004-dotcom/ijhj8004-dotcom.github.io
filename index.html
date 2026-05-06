@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON BITE | Experiencia Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Background Grid -->
+    <div class="bg-grid"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo glitch-hover" data-text="NEON BITE">NEON BITE</div>
+            <ul class="nav-links">
+                <li><a href="#menu" class="hover-underline">MENU</a></li>
+                <li><a href="#experiencia" class="hover-underline">EXPERIENCIA</a></li>
+                <li><a href="#promos" class="hover-underline">PROMOS</a></li>
+            </ul>
+            <a href="#pedir" class="btn-neon">PEDIR AHORA</a>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="COMIDA QUE EXPLOTA">COMIDA QUE EXPLOTA</h1>
+            <p class="subtitle">Hackea tu hambre. El sabor del futuro ya está aquí.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-neon primary-glow">ORDENAR YA</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="image-glow"></div>
+            <img src="hero.png" alt="Neon Burger" class="hero-img floating" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+        </div>
+    </header>
+
+    <!-- Infinite Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>URBAN TASTE /// NEON BITE /// NO RULES /// CYBER JUNK FOOD /// </span>
+            <span>URBAN TASTE /// NEON BITE /// NO RULES /// CYBER JUNK FOOD /// </span>
+            <span>URBAN TASTE /// NEON BITE /// NO RULES /// CYBER JUNK FOOD /// </span>
+        </div>
+    </div>
+
+    <section id="menu" class="section menu-section">
+        <h2 class="section-title glitch-hover" data-text="// EL MENÚ">// EL MENÚ</h2>
+        
+        <div class="menu-grid">
+            <!-- Card 1 -->
+            <div class="menu-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="1000">
+                <div class="card-glow neon-pink"></div>
+                <div class="card-image">
+                    <!-- Reusing hero image due to quota limit -->
+                    <img src="hero.png" alt="Cyber Burger">
+                </div>
+                <div class="card-content">
+                    <h3>CYBER BURGER</h3>
+                    <p>Doble carne, queso radiactivo, bacon y salsa secreta glitch.</p>
+                    <div class="card-footer">
+                        <span class="price">4050 <span>CRD</span></span>
+                        <button class="btn-icon"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="menu-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="1000">
+                <div class="card-glow neon-cyan"></div>
+                <div class="card-image">
+                    <!-- Reusing hero image -->
+                    <img src="hero.png" alt="Neon Fries" style="filter: hue-rotate(90deg);">
+                </div>
+                <div class="card-content">
+                    <h3>NEON FRIES</h3>
+                    <p>Papas rústicas bañadas en cheddar líquido y jalapeños eléctricos.</p>
+                    <div class="card-footer">
+                        <span class="price">2100 <span>CRD</span></span>
+                        <button class="btn-icon"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="menu-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="1000">
+                <div class="card-glow neon-green"></div>
+                <div class="card-image">
+                    <!-- Reusing hero image -->
+                    <img src="hero.png" alt="Toxic Drink" style="filter: hue-rotate(180deg) saturate(2);">
+                </div>
+                <div class="card-content">
+                    <h3>TOXIC DRINK</h3>
+                    <p>Cóctel energético verde fluorescente. Sabor lima-limón extremo.</p>
+                    <div class="card-footer">
+                        <span class="price">1500 <span>CRD</span></span>
+                        <button class="btn-icon"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section exp-section">
+        <div class="exp-content reveal">
+            <h2 class="glitch" data-text="SISTEMA SOBRECARGADO">SISTEMA SOBRECARGADO</h2>
+            <p>No somos un restaurante. Somos una simulación de sabor. Luces de neón, beats intensos y comida que te reinicia el sistema operativo.</p>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fa-solid fa-bolt neon-text-cyan"></i>
+                    <h4>FAST DELIVERY</h4>
+                    <p>Entregas a la velocidad de la fibra óptica.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fa-solid fa-gamepad neon-text-pink"></i>
+                    <h4>GAMER ZONE</h4>
+                    <p>Locales equipados para tu escuadrón.</p>
+                </div>
+            </div>
+        </div>
+        <div class="exp-visual reveal">
+            <div class="abstract-shape shape-1"></div>
+            <div class="abstract-shape shape-2"></div>
+            <div class="glitch-box">ERROR 404: DIET NOT FOUND</div>
+        </div>
+    </section>
+
+    <section id="promos" class="section promos-section">
+        <h2 class="section-title glitch-hover" data-text="/// OFERTAS">/// OFERTAS</h2>
+        <div class="promo-banner" data-tilt>
+            <div class="promo-info">
+                <h3>COMBO MATRIX</h3>
+                <p>2 Cyber Burgers + 2 Neon Fries + 2 Bebidas + Skin Exclusivo</p>
+                <div class="price-strike">12000 CRD</div>
+                <div class="price-neon">8500 CRD</div>
+                <button class="btn-neon primary-glow mt-4">RECLAMAR LOOT</button>
+            </div>
+            <div class="promo-image">
+                <img src="hero.png" alt="Combo" class="floating">
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="section social-section">
+        <h2 class="section-title text-center">JOIN THE NETWORK</h2>
+        <div class="social-feed">
+            <div class="feed-item reveal"><img src="hero.png" alt="Feed 1"><div class="feed-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="feed-item reveal" style="transition-delay: 0.1s"><img src="hero.png" alt="Feed 2" style="filter: hue-rotate(45deg);"><div class="feed-overlay"><i class="fa-brands fa-tiktok"></i></div></div>
+            <div class="feed-item reveal" style="transition-delay: 0.2s"><img src="hero.png" alt="Feed 3" style="filter: invert(1);"><div class="feed-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="feed-item reveal" style="transition-delay: 0.3s"><img src="hero.png" alt="Feed 4" style="filter: saturate(3);"><div class="feed-overlay"><i class="fa-brands fa-twitter"></i></div></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo glitch-hover" data-text="NEON BITE">NEON BITE</div>
+            <div class="footer-links">
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-twitch"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>SYSTEM ONLINE /// &copy; 2026 NEON BITE CORP. /// ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
